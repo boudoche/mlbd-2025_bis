@@ -22,9 +22,10 @@ def person_b(df):
     Returns:
     dataframe: Data from the female students
     """
-    # Code goes over here.
+    df_c = df.copy()
+    df_c = df_c[df_c["gender"]=="female"]
 
-    raise NotImplementedError()
+    return df_c
 
 def person_c(df):
     """Calculates the mean from the column "grade"
