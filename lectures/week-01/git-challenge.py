@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 def person_a():
+    df = pd.read_csv(".\data behaviour\mlbd-2025\data\school_performance.csv")
+    return df.head(5000)
     """Reads the data in data/school_performance.csv
     and returns a dataframe with the first 5,000 rows.
 
@@ -9,9 +11,6 @@ def person_a():
     dataframe: containing first 5,000 rows of school_performace.csv
     """
     # Code goes over here.
-
-    
-    raise NotImplementedError()
 
 def person_b(df):
     """Keeps only the data from the female students. 
